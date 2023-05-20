@@ -16,7 +16,7 @@ const NavBar = (props: Props) => {
     <div className="w-full">
       <nav className="hidden md:flex md:justify-between">
         {navLinks.map((link) => (
-          <Link key={link.name} href={link.link}>
+          <Link className="hover:border-b-2" key={link.name} href={link.link}>
             {link.name}
           </Link>
         ))}
